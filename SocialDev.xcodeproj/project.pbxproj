@@ -13,6 +13,11 @@
 		0729B86F1D91384600A85060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0729B86E1D91384600A85060 /* Assets.xcassets */; };
 		0729B8721D91384600A85060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0729B8701D91384600A85060 /* LaunchScreen.storyboard */; };
 		0729B87A1D9138D900A85060 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0729B8791D9138D900A85060 /* GoogleService-Info.plist */; };
+		0729B87F1D9163AB00A85060 /* PrittyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B87E1D9163AB00A85060 /* PrittyView.swift */; };
+		0729B8821D91673700A85060 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8811D91673700A85060 /* Constants.swift */; };
+		0729B8841D91686D00A85060 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8831D91686D00A85060 /* RoundBtn.swift */; };
+		0729B8861D916A3F00A85060 /* PrittyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8851D916A3F00A85060 /* PrittyField.swift */; };
+		0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8871D916B2200A85060 /* PrittyButton.swift */; };
 		1B802C596A82F9940AAD4616 /* Pods_SocialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		0729B8711D91384600A85060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0729B8731D91384600A85060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0729B8791D9138D900A85060 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0729B87E1D9163AB00A85060 /* PrittyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyView.swift; sourceTree = "<group>"; };
+		0729B8811D91673700A85060 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0729B8831D91686D00A85060 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		0729B8851D916A3F00A85060 /* PrittyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyField.swift; sourceTree = "<group>"; };
+		0729B8871D916B2200A85060 /* PrittyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyButton.swift; sourceTree = "<group>"; };
 		37CDF150717C7776778D78C9 /* Pods-SocialDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.debug.xcconfig"; sourceTree = "<group>"; };
 		D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F939A04946B39A136E73F3B1 /* Pods-SocialDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +73,7 @@
 		0729B8661D91384600A85060 /* SocialDev */ = {
 			isa = PBXGroup;
 			children = (
+				0729B8801D91672900A85060 /* Util */,
 				0729B87B1D913E8600A85060 /* Model */,
 				0729B87D1D913E9600A85060 /* Controller */,
 				0729B87C1D913E8C00A85060 /* View */,
@@ -86,6 +97,10 @@
 		0729B87C1D913E8C00A85060 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0729B87E1D9163AB00A85060 /* PrittyView.swift */,
+				0729B8831D91686D00A85060 /* RoundBtn.swift */,
+				0729B8851D916A3F00A85060 /* PrittyField.swift */,
+				0729B8871D916B2200A85060 /* PrittyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +111,14 @@
 				0729B8691D91384600A85060 /* SignVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0729B8801D91672900A85060 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0729B8811D91673700A85060 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		1C9D27A8AFCC46514C23C874 /* Frameworks */ = {
@@ -239,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0729B8861D916A3F00A85060 /* PrittyField.swift in Sources */,
 				0729B86A1D91384600A85060 /* SignVC.swift in Sources */,
+				0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */,
+				0729B8841D91686D00A85060 /* RoundBtn.swift in Sources */,
 				0729B8681D91384600A85060 /* AppDelegate.swift in Sources */,
+				0729B87F1D9163AB00A85060 /* PrittyView.swift in Sources */,
+				0729B8821D91673700A85060 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

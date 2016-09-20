@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1g-E6-sJ2" customClass="PrittyView" customModule="SocialDev" customModuleProvider="target">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snoopy-Vector-PNG" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-RV-lD5">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="bj4-b7-8sc"/>
+                                            <constraint firstAttribute="width" constant="110" id="p3n-k2-kZq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.86630608974358969" blue="0.34850268187681699" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cok-RV-lD5" firstAttribute="centerX" secondItem="j1g-E6-sJ2" secondAttribute="centerX" id="Fic-DY-6JB"/>
+                                    <constraint firstAttribute="height" constant="100" id="qQ0-dG-04N"/>
+                                    <constraint firstItem="Cok-RV-lD5" firstAttribute="centerY" secondItem="j1g-E6-sJ2" secondAttribute="centerY" constant="5" id="xrL-kY-Gf6"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCF-ZE-Xng">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account you will be Signed Up automatically" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-nP-zkx">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.85556891025641024" blue="0.29307471715444777" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Sea-nP-zkx" firstAttribute="leading" secondItem="QCF-ZE-Xng" secondAttribute="leading" constant="8" id="4Gc-fy-hEC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sea-nP-zkx" secondAttribute="trailing" constant="8" id="56D-Ed-oDS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sea-nP-zkx" secondAttribute="bottom" constant="8" id="Moc-tC-6ed"/>
+                                    <constraint firstItem="Sea-nP-zkx" firstAttribute="top" secondItem="QCF-ZE-Xng" secondAttribute="top" constant="8" id="XJx-IN-Uvq"/>
+                                    <constraint firstAttribute="height" constant="75" id="awp-I3-eQI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj3-Tv-ocw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Yha-yJ-qI3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssn-J6-QFZ" customClass="RoundBtn" customModule="SocialDev" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.2627450980392157" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Ti2-n7-fCH"/>
+                                    <constraint firstAttribute="width" constant="130" id="l6M-Mh-MrQ"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2j6-kc-6gW">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9Q-rW-yGW" customClass="PrittyField" customModule="SocialDev" customModuleProvider="target">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-9K-UWm" customClass="PrittyField" customModule="SocialDev" customModuleProvider="target">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZD-3a-trV" customClass="PrittyButton" customModule="SocialDev" customModuleProvider="target">
+                                        <color key="backgroundColor" red="0.17254901960784313" green="0.26666666666666666" blue="0.53333333333333333" alpha="0.30288254310344825" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.17254901960784313" green="0.26666666666666666" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ssn-J6-QFZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Wv-2f-0ck"/>
+                            <constraint firstItem="Ssn-J6-QFZ" firstAttribute="top" secondItem="Wj3-Tv-ocw" secondAttribute="bottom" constant="40" id="3zz-47-juM"/>
+                            <constraint firstAttribute="trailing" secondItem="Wj3-Tv-ocw" secondAttribute="trailing" id="5eq-Ma-J2S"/>
+                            <constraint firstAttribute="trailing" secondItem="Sea-nP-zkx" secondAttribute="trailing" constant="8" id="6rl-qo-TKA"/>
+                            <constraint firstItem="2j6-kc-6gW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="8Kf-Jw-4E6"/>
+                            <constraint firstItem="QCF-ZE-Xng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ahb-wU-T9h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2j6-kc-6gW" secondAttribute="trailing" constant="20" id="E2O-Tw-FyL"/>
+                            <constraint firstAttribute="bottom" secondItem="Sea-nP-zkx" secondAttribute="bottom" constant="8" id="Eiq-6Y-5Xx"/>
+                            <constraint firstItem="Sea-nP-zkx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="URs-k4-tK7"/>
+                            <constraint firstAttribute="trailing" secondItem="j1g-E6-sJ2" secondAttribute="trailing" id="a5D-l2-9u6"/>
+                            <constraint firstItem="Wj3-Tv-ocw" firstAttribute="top" secondItem="j1g-E6-sJ2" secondAttribute="bottom" constant="20" id="eO2-Sc-hOq"/>
+                            <constraint firstItem="j1g-E6-sJ2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="emE-tO-Pbg"/>
+                            <constraint firstItem="j1g-E6-sJ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fnl-mA-Qaz"/>
+                            <constraint firstItem="2j6-kc-6gW" firstAttribute="top" secondItem="Ssn-J6-QFZ" secondAttribute="bottom" constant="45" id="h44-F2-NaD"/>
+                            <constraint firstItem="Wj3-Tv-ocw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hux-X3-QGL"/>
+                            <constraint firstItem="Sea-nP-zkx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="600" id="kaN-b1-YDu"/>
+                            <constraint firstAttribute="trailing" secondItem="QCF-ZE-Xng" secondAttribute="trailing" id="oPW-27-lma"/>
+                            <constraint firstItem="2j6-kc-6gW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r8d-j1-diz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QCF-ZE-Xng" secondAttribute="bottom" id="u7K-D5-8hN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="125.4872563718141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Snoopy-Vector-PNG" width="518" height="518"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>
