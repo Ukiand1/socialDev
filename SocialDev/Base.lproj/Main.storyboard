@@ -81,13 +81,16 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-9K-UWm" customClass="PrittyField" customModule="SocialDev" customModuleProvider="target">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZD-3a-trV" customClass="PrittyButton" customModule="SocialDev" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.17254901960784313" green="0.26666666666666666" blue="0.53333333333333333" alpha="0.30288254310344825" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="0.17254901960784313" green="0.26666666666666666" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnE-To-rfO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -115,6 +118,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QCF-ZE-Xng" secondAttribute="bottom" id="u7K-D5-8hN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="k9Q-rW-yGW" id="hde-Of-h16"/>
+                        <outlet property="pwdField" destination="oAT-9K-UWm" id="3bs-89-jBe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

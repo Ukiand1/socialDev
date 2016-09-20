@@ -13,6 +13,9 @@ import Firebase
 
 class SignVC: UIViewController {
 
+    @IBOutlet weak var emailField: PrittyField!
+    @IBOutlet weak var pwdField: PrittyField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,6 +52,27 @@ class SignVC: UIViewController {
                 print ("UROS: Successfully authenticated with Firebase")
             }
         })
+    }
+    
+    @IBAction func signInTapped(_ sender: AnyObject) {
+    
+        if let email = emailField.text, let pwd = pwdField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print ("UROS: Email user authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print ("UROS: Email user FAILED auth with Firebase")
+                        } else {
+                            print ("UROS: Successfully auth with Firebase")
+                        }
+                    })
+                    
+                }
+            })
+        }
+        
     }
 
 }
