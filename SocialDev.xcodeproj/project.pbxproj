@@ -18,6 +18,7 @@
 		0729B8841D91686D00A85060 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8831D91686D00A85060 /* RoundBtn.swift */; };
 		0729B8861D916A3F00A85060 /* PrittyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8851D916A3F00A85060 /* PrittyField.swift */; };
 		0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8871D916B2200A85060 /* PrittyButton.swift */; };
+		0729B88B1D918FFE00A85060 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B88A1D918FFE00A85060 /* FeedVC.swift */; };
 		1B802C596A82F9940AAD4616 /* Pods_SocialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0729B8851D916A3F00A85060 /* PrittyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyField.swift; sourceTree = "<group>"; };
 		0729B8871D916B2200A85060 /* PrittyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyButton.swift; sourceTree = "<group>"; };
 		0729B8891D917F4C00A85060 /* SocialDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialDev.entitlements; sourceTree = "<group>"; };
+		0729B88A1D918FFE00A85060 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		37CDF150717C7776778D78C9 /* Pods-SocialDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.debug.xcconfig"; sourceTree = "<group>"; };
 		D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F939A04946B39A136E73F3B1 /* Pods-SocialDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0729B8691D91384600A85060 /* SignVC.swift */,
+				0729B88A1D918FFE00A85060 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 					0729B8631D91384600A85060 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TE6425M8E7;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -274,6 +278,7 @@
 				0729B86A1D91384600A85060 /* SignVC.swift in Sources */,
 				0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */,
 				0729B8841D91686D00A85060 /* RoundBtn.swift in Sources */,
+				0729B88B1D918FFE00A85060 /* FeedVC.swift in Sources */,
 				0729B8681D91384600A85060 /* AppDelegate.swift in Sources */,
 				0729B87F1D9163AB00A85060 /* PrittyView.swift in Sources */,
 				0729B8821D91673700A85060 /* Constants.swift in Sources */,
