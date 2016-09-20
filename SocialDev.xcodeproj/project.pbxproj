@@ -35,6 +35,7 @@
 		0729B8831D91686D00A85060 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		0729B8851D916A3F00A85060 /* PrittyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyField.swift; sourceTree = "<group>"; };
 		0729B8871D916B2200A85060 /* PrittyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyButton.swift; sourceTree = "<group>"; };
+		0729B8891D917F4C00A85060 /* SocialDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialDev.entitlements; sourceTree = "<group>"; };
 		37CDF150717C7776778D78C9 /* Pods-SocialDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.debug.xcconfig"; sourceTree = "<group>"; };
 		D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F939A04946B39A136E73F3B1 /* Pods-SocialDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		0729B8661D91384600A85060 /* SocialDev */ = {
 			isa = PBXGroup;
 			children = (
+				0729B8891D917F4C00A85060 /* SocialDev.entitlements */,
 				0729B8801D91672900A85060 /* Util */,
 				0729B87B1D913E8600A85060 /* Model */,
 				0729B87D1D913E9600A85060 /* Controller */,
@@ -173,7 +175,13 @@
 				TargetAttributes = {
 					0729B8631D91384600A85060 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TE6425M8E7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -392,6 +400,8 @@
 			baseConfigurationReference = 37CDF150717C7776778D78C9 /* Pods-SocialDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialDev/SocialDev.entitlements;
+				DEVELOPMENT_TEAM = TE6425M8E7;
 				INFOPLIST_FILE = SocialDev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabidu.SocialDev;
@@ -405,6 +415,8 @@
 			baseConfigurationReference = F939A04946B39A136E73F3B1 /* Pods-SocialDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialDev/SocialDev.entitlements;
+				DEVELOPMENT_TEAM = TE6425M8E7;
 				INFOPLIST_FILE = SocialDev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabidu.SocialDev;
