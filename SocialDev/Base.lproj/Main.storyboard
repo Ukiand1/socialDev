@@ -142,25 +142,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-2T-l6s" customClass="PrittyView" customModule="SocialDev" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="f2k-i4-g33">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="72V-7e-nmR"/>
-                                            <constraint firstAttribute="width" constant="47" id="vp8-n9-TXm"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-rf-jyB">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCF-x0-zHs">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LLp-nP-tha"/>
+                                            <constraint firstAttribute="width" constant="40" id="eZB-Ic-ri8"/>
+                                        </constraints>
+                                        <state key="normal" image="sign-out"/>
+                                        <connections>
+                                            <action selector="signedOutTapped:" destination="NqW-Ed-fCo" eventType="touchUpInside" id="cQM-Lp-XmR"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.8666666666666667" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="lCF-x0-zHs" firstAttribute="leading" secondItem="eMg-2T-l6s" secondAttribute="leading" constant="15" id="28a-cR-XHK"/>
+                                    <constraint firstItem="pi6-rf-jyB" firstAttribute="centerY" secondItem="lCF-x0-zHs" secondAttribute="centerY" id="29d-3U-LVi"/>
+                                    <constraint firstItem="lCF-x0-zHs" firstAttribute="top" secondItem="eMg-2T-l6s" secondAttribute="top" constant="20" id="3Np-2M-AnD"/>
                                     <constraint firstItem="pi6-rf-jyB" firstAttribute="centerX" secondItem="eMg-2T-l6s" secondAttribute="centerX" id="ChM-mY-xtY"/>
                                     <constraint firstAttribute="height" constant="60" id="Chk-Am-X8K"/>
-                                    <constraint firstItem="f2k-i4-g33" firstAttribute="top" secondItem="eMg-2T-l6s" secondAttribute="top" constant="22" id="DF5-Ot-cuB"/>
-                                    <constraint firstItem="pi6-rf-jyB" firstAttribute="centerY" secondItem="f2k-i4-g33" secondAttribute="centerY" id="Q1z-Ae-Iql"/>
-                                    <constraint firstItem="f2k-i4-g33" firstAttribute="leading" secondItem="eMg-2T-l6s" secondAttribute="leading" constant="11" id="Vsr-5C-ypi"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeW-aA-rEI" customClass="PrittyView" customModule="SocialDev" customModuleProvider="target">
@@ -203,14 +207,14 @@
                                     <constraint firstItem="TTV-Pu-7A8" firstAttribute="leading" secondItem="TeW-aA-rEI" secondAttribute="leading" constant="8" id="mg5-mn-h18"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="285" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M1b-OK-0FJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="369" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M1b-OK-0FJ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="64h-7p-4nv">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="285"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="369" id="64h-7p-4nv" customClass="PostCell" customModule="SocialDev" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="369"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="64h-7p-4nv" id="4db-K2-Md7">
-                                            <frame key="frameInset" width="375" height="284"/>
+                                            <frame key="frameInset" width="375" height="369"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkQ-HZ-1TE" customClass="PrittyView" customModule="SocialDev" customModuleProvider="target">
@@ -238,10 +242,13 @@
                                                                         </imageView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-RV-cg7"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-was-going-to-say-youre-amazing-but" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-RV-cg7"/>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zEx-wH-N4m">
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="iiG-kK-qIZ"/>
+                                                                    </constraints>
+                                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
@@ -261,13 +268,11 @@
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="g5I-RV-cg7" firstAttribute="top" secondItem="QQj-qF-h8D" secondAttribute="bottom" id="LPw-3U-fy8"/>
                                                                 <constraint firstAttribute="trailing" secondItem="QQj-qF-h8D" secondAttribute="trailing" id="Lm7-hH-5ej"/>
                                                                 <constraint firstAttribute="trailing" secondItem="zEx-wH-N4m" secondAttribute="trailing" id="UMF-Kk-mUo"/>
                                                                 <constraint firstItem="QQj-qF-h8D" firstAttribute="leading" secondItem="NTo-31-M5b" secondAttribute="leading" id="dyv-JZ-gts"/>
                                                                 <constraint firstItem="QQj-qF-h8D" firstAttribute="top" secondItem="NTo-31-M5b" secondAttribute="top" id="eQ9-D7-VJx"/>
                                                                 <constraint firstItem="zEx-wH-N4m" firstAttribute="leading" secondItem="NTo-31-M5b" secondAttribute="leading" id="hrW-oU-TKK"/>
-                                                                <constraint firstItem="zEx-wH-N4m" firstAttribute="top" secondItem="g5I-RV-cg7" secondAttribute="bottom" id="rGb-qr-7vG"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
@@ -307,6 +312,9 @@
                             <constraint firstAttribute="trailing" secondItem="eMg-2T-l6s" secondAttribute="trailing" id="wwt-Yp-hU7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="M1b-OK-0FJ" id="keA-eq-AxY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5i-Zc-lYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +328,7 @@
         <image name="add-post" width="88" height="88"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
-        <image name="placeholder" width="567" height="312"/>
+        <image name="i-was-going-to-say-youre-amazing-but" width="1200" height="628"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
