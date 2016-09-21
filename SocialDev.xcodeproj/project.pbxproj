@@ -19,6 +19,7 @@
 		0729B8861D916A3F00A85060 /* PrittyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8851D916A3F00A85060 /* PrittyField.swift */; };
 		0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B8871D916B2200A85060 /* PrittyButton.swift */; };
 		0729B88B1D918FFE00A85060 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B88A1D918FFE00A85060 /* FeedVC.swift */; };
+		0769615B1D92C59400F513C8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0769615A1D92C59400F513C8 /* CircleView.swift */; };
 		1B802C596A82F9940AAD4616 /* Pods_SocialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		0729B8871D916B2200A85060 /* PrittyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrittyButton.swift; sourceTree = "<group>"; };
 		0729B8891D917F4C00A85060 /* SocialDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialDev.entitlements; sourceTree = "<group>"; };
 		0729B88A1D918FFE00A85060 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		0769615A1D92C59400F513C8 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		37CDF150717C7776778D78C9 /* Pods-SocialDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.debug.xcconfig"; sourceTree = "<group>"; };
 		D23543F82FB5108E232F48C8 /* Pods_SocialDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F939A04946B39A136E73F3B1 /* Pods-SocialDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialDev/Pods-SocialDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				0729B8831D91686D00A85060 /* RoundBtn.swift */,
 				0729B8851D916A3F00A85060 /* PrittyField.swift */,
 				0729B8871D916B2200A85060 /* PrittyButton.swift */,
+				0769615A1D92C59400F513C8 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0769615B1D92C59400F513C8 /* CircleView.swift in Sources */,
 				0729B8861D916A3F00A85060 /* PrittyField.swift in Sources */,
 				0729B86A1D91384600A85060 /* SignVC.swift in Sources */,
 				0729B8881D916B2200A85060 /* PrittyButton.swift in Sources */,
